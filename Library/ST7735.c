@@ -128,8 +128,7 @@ static void ST7735_writeCmd(uint8_t c)
   LcdWrite(LCD_C, &c, 1);
 }
 
-void ST7735_setAddrWindow(uint16_t x0, uint16_t y0, 
-			  uint16_t x1, uint16_t y1, uint8_t madctl)
+void ST7735_setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint8_t madctl)
 {
   madctl = MADVAL(madctl);
   if (madctl != madctlcurrent){
